@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="flex justify-center items-center absolute bg-gray-100 w-full h-full p-12">
+        <form action="" method="post"
+            class="flex flex-col gap-12 shadow container bg-white mx-auto max-w-screen-lg border border-gray-500 rounded-lg p-6">
+            <div class="flex flex-row gap-6">
+                <!-- register -->
+                <div class="flex flex-col gap-2 w-full">
+                    <div class="text-2xl font-bold">Register</div>
+                    <div class="">
+                        <label for="name" class="capitalize text-xs font-bold text-gray-500">name</label>
+                        <input type="text" name="name" id="name" onsubmit="validate(this.value)" class="input input-bordered input-md w-full"
+                            placeholder="Enter Name..." required>
+                    </div>
+                    <div class="">
+                        <label for="birthday" class="capitalize text-xs font-bold text-gray-500">birthday</label>
+                        <input type="date" name="birthday" id="birthday" onsubmit="validate(this.value)" class="input input-bordered input-md w-full"
+                            required>
+                    </div>
+                    <div class="">
+                        <label for="sex" class="capitalize text-xs font-bold text-gray-500">sex</label>
+                        <select name="sex" id="sex" class="select select-bordered w-full">
+                            <option value="" selected disabled></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="">
+                        <label for="address" class="capitalize text-xs font-bold text-gray-500">address</label>
+                        <input type="text" name="address" id="address" onsubmit="validate(this.value)" class="input input-bordered input-md w-full"
+                            placeholder="Enter Address..." required>
+                    </div>
+                    <div class="">
+                        <label for="password" class="capitalize text-xs font-bold text-gray-500">password</label>
+                        <input type="password" name="password" id="password" onsubmit="validate(this.value)"
+                            class="input input-bordered input-md w-full" placeholder="Enter Password..." required>
+                    </div>
+                    <div class="">
+                        <label for="confirm_password" class="capitalize text-xs font-bold text-gray-500">confirm
+                            password</label>
+                        <input type="password" name="confirm_password" id="confirm_password" onsubmit="validate(this.value)"
+                            class="input input-bordered input-md w-full" placeholder="Enter Confirm Password..."
+                            required>
+                    </div>
+                </div>
+
+                <div class="divider lg:divider-horizontal"></div>
+
+                <!-- contact info -->
+                <div class="flex flex-col gap-2 w-full">
+                    <div class="text-2xl font-bold">Contact Info</div>
+                    <div class="">
+                        <label for="phone" class="capitalize text-xs font-bold text-gray-500">phone</label>
+                        <input type="text" name="phone" id="phone" onsubmit="validate(this.value)" class="input input-bordered input-md w-full"
+                            placeholder="Phone..." required>
+                    </div>
+                    <div class="">
+                        <label for="secondary_phone" class="capitalize text-xs font-bold text-gray-500">secondary
+                            phone</label>
+                        <input type="text" name="secondary_phone" id="secondary_phone" onsubmit="validate(this.value)"
+                            class="input input-bordered input-md w-full" placeholder="Secondary Phone..." required>
+                    </div>
+                    <div class="">
+                        <label for="other_phone" class="capitalize text-xs font-bold text-gray-500">other phone</label>
+                        <input type="text" name="other_phone" id="other_phone" onsubmit="validate(this.value)"
+                            class="input input-bordered input-md w-full" placeholder="Other Phone..." required>
+                    </div>
+
+                    <div class="">
+                        <label for="email" class="capitalize text-xs font-bold text-gray-500">email</label>
+                        <input type="email" name="email" id="email" onsubmit="validate(this.value)" class="input input-bordered input-md w-full"
+                            placeholder="Enter Email..." required>
+                    </div>
+                    <div class="">
+                        <label for="secondary_email" class="capitalize text-xs font-bold text-gray-500">secondary
+                            email</label>
+                        <input type="email" name="secondary_email" id="secondary_email" onsubmit="validate(this.value)"
+                            class="input input-bordered input-md w-full" placeholder="Enter Secondary Email..."
+                            required>
+                    </div>
+                    <div class="">
+                        <label for="primary_contact" class="capitalize text-xs font-bold text-gray-500">primary main
+                            contact</label>
+                        <select name="primary_contact" id="primary_contact" class="select select-bordered w-full">
+                            <option value="" selected disabled></option>
+                            <!-- <option value=""></option> -->
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center">
+                <button type="submit" onclick="validate()"
+                    class="btn btn-sm btn-success text-white w-full max-w-lg">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script>
+    function validate(value) {
+        
+    }
+</script>
+
+</html>
