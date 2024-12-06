@@ -1,0 +1,217 @@
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git init
+Initialized empty Git repository in C:/xampp/htdocs/BSIT 4-1 Dumagat/.git/
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git add index.html
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git status        
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git add . 
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git -m "Initial Commit"           
+unknown option: -m
+usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]
+           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]
+           <command> [<args>]
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git commit  -m "Initial Commit"
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git commit  -m "Initial Commit"
+Author identity unknown
+Author identity unknown
+
+
+*** Please tell me who you are.
+*** Please tell me who you are.
+
+Run
+
+
+  git config --global user.email "you@example.com"
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+Omit --global to set the identity only in this repository.
+
+
+fatal: unable to auto-detect email address (got 'CCL@CCL305-PC14.(none)')
+fatal: unable to auto-detect email address (got 'CCL@CCL305-PC14.(none)')
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git config --global user.mail "ricamae042003@gmail.com"
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git config --global user.email "ricamae042003@gmail.com"
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git config --global user.name "ricamaeee"
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git config user.email
+ricamae042003@gmail.com
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git config user.name
+ricamaeee
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git commit  -m "Initial Commit"
+[master (root-commit) f17b156] Initial Commit
+ 2 files changed, 116 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 style.css
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git remote add origin https://github.com/ricamaeee/lab1-itec116.git
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git branch -M master
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 1.38 KiB | 1.38 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/ricamaeee/lab1-itec116.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git branch
+* master
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git branch css/style 
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git branch          
+  css/style
+* master
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git checkout style/css
+error: pathspec 'style/css' did not match any file(s) known to git
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git checkout cc/style 
+error: pathspec 'cc/style' did not match any file(s) known to git
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git checkout css/style
+Switched to branch 'css/style'
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git branch
+* css/style
+  master
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git add script.js
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git status
+On branch css/style
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   script.js
+
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git commit -m "Second Commit"
+[css/style b39c91e] Second Commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 script.js
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git status
+On branch css/style
+nothing to commit, working tree clean
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git push origin css/style 
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 278 bytes | 278.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'css/style' on GitHub by visiting:
+remote:      https://github.com/ricamaeee/lab1-itec116/pull/new/css/style
+remote:
+To https://github.com/ricamaeee/lab1-itec116.git
+ * [new branch]      css/style -> css/style
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git checkout master      
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git branch style/css
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git checkout master
+Already on 'master'
+Your branch is up to date with 'origin/master'.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git pull origin/master
+fatal: 'origin/master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git checkout style/css
+Switched to branch 'style/css'
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git pull style/css    
+fatal: 'style/css' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git pull cc/style 
+fatal: 'cc/style' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git pull css/style
+fatal: 'css/style' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git branch
+  css/style
+  master
+* style/css
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git checkout style/css
+Already on 'style/css'
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git pull style/css
+fatal: 'style/css' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat> git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 894 bytes | 298.00 KiB/s, done.
+From https://github.com/ricamaeee/lab1-itec116
+   f17b156..4752e5c  master     -> origin/master
+Updating f17b156..4752e5c
+Fast-forward
+ script.js | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 script.js
+PS C:\xampp\htdocs\BSIT 4-1 Dumagat>
+
